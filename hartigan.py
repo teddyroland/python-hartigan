@@ -2,7 +2,7 @@ from sklearn.cluster import KMeans
 from numpy import array
 
 def hartigan_K(list_of_tuples, threshold = 12):
-    # 'list_of_tuples' is an list containing the points you want to cluster
+    # 'list_of_tuples' is a list containing the points you want to cluster
     # 'threshold' optimizes goodness of fit values
     #     Hartigan recommends setting threshold to 10, but Chiang & Mirkin confirm up to 12
     
