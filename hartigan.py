@@ -6,7 +6,7 @@ def hartigan_K(list_of_tuples, threshold = 12):
     # 'threshold' optimizes goodness of fit values
     #     Hartigan recommends setting threshold to 10, but Chiang & Mirkin confirm up to 12
     
-    inertia_list = zeros(len(list_of_tuples)) # initializes for maximum possible clusters (unlikely to use all)
+    inertia_list = zeros(len(list_of_tuples)) # initializes for maximum possible clusters
     num = 0                                   # counter
     H_Rule = threshold+1                      # 'H_Rule' simply initializes above threshold to meet 'while' condition
     
@@ -22,7 +22,7 @@ def hartigan_K(list_of_tuples, threshold = 12):
     
     if H_Rule > threshold:
       num+=1
-    # NOTE: if loop reaches the number of K-Means clusters equal to the length of list_of_tuples
+    # NOTE: if while-loop reaches the number of K-Means clusters equal to the length of list_of_tuples
     # without hitting the threshold, then function returns trivial solution that there are N clusters
     # (where N is the number of points under consideration)
     
