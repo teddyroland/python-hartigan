@@ -1,4 +1,4 @@
-PYTHON-HARTIGAN is a python script that provides an unsupervised method to determine an optimal value K in K-Means clustering. The script is an implementation of Hartigan's Rule -- essentially it measures the change in goodness-of-fit as the number of clusters increases. This implementation is based on Chiang & Mirkin (2009), §3.1(B). Feel free to change the script in any way; it is heavily commented to guide any edits you may need to make.
+PYTHON-HARTIGAN is a python script that provides an unsupervised method to determine an optimal value K in K-Means clustering. The script is an implementation of Hartigan's Rule -- essentially it measures the change in goodness-of-fit as the number of clusters increases. This implementation is based on Chiang & Mirkin (2009), §3.1(B). Feel free to change the script in any way; it is commented to guide any edits you may need to make.
 
 PYTHON-HARTIGAN relies on two standard scientific Python packages: numpy & scikit-learn.
 
