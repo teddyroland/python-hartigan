@@ -6,6 +6,8 @@ def hartigan_K(list_of_tuples, threshold = 12):
     # 'threshold' optimizes goodness of fit values
     #     Hartigan recommends setting threshold to 10, but Chiang & Mirkin confirm up to 12
     
+    # returns integer, "right" number of clusters
+    
     inertia_list = zeros(len(list_of_tuples)) # initializes for maximum possible clusters
     num = 0                                   # counter
     H_Rule = threshold+1                      # 'H_Rule' simply initializes above threshold to meet 'while' condition
