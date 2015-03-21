@@ -8,8 +8,8 @@ def hartigan_K(list_of_tuples, threshold = 12):
     # returns integer, "correct" number of clusters
     
     inertia_list = zeros(len(list_of_tuples)+1) # initializes for maximum possible clusters
-    num = 0                                   # counter
-    H_Rule = threshold+1                      # 'H_Rule' simply initializes above threshold to meet 'while' condition
+    num = 0                                     # counter
+    H_Rule = threshold+1                        # simply initializes above threshold to meet 'while' condition
     
     # NOTE: 'inertia' is equivalent to the sum of within-cluster distances to centroids
     
